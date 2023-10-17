@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>News App By - Waleed Khattak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="nav" class="flex container">
+            <div class="logo">
+                <a href="#">
+                    <img id="logo" src="img/logo.png" alt="News Logo">
+                </a>
+            </div>
+
+            <div class="nav-links">
+                <ul>
+                    <li id="Politics" onclick="CustomNews(id)">Politics</li>
+                    <li id="Sports" onclick="CustomNews(id)">Sports</li>
+                    <li id="Finance" onclick="CustomNews(id)">Finance</li>
+                    <li id="Technology" onclick="CustomNews(id)">Technology</li>
+                    <li id="Funny" onclick="CustomNews(id)">Funny</li>
+                </ul>
+            </div>
+
+            <div class="seacrh">
+                <input type="text" name="text" id="input-text" placeholder="e.x science">
+                <input type="button" value="search" id="input-button">
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="main">
+        <div class="flex card-container container" id="card-container">
+           
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
